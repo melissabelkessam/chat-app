@@ -1,0 +1,9 @@
+# Ignorer node_modules
+node_modules/
+
+# Ignorer les fichiers système (Windows)
+Thumbs.db
+desktop.ini
+
+# Ignorer les fichiers de logs
+*.log

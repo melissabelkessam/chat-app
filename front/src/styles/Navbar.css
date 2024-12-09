@@ -1,0 +1,117 @@
+/* Global Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #1a202c, #2d3748); /* Gris foncé dégradé */
+    color: #e2e8f0; /* Gris clair */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Ombre accentuée */
+}
+
+/* Logo Styling */
+.navbar-logo .navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    color: #63b3ed; /* Bleu clair */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-logo .navbar-brand:hover {
+    color: #90cdf4; /* Bleu plus clair */
+}
+
+/* Links Container */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* User Greeting */
+.navbar-user {
+    font-size: 16px;
+    font-weight: 500;
+    color: #cbd5e0; /* Gris doux */
+}
+
+/* Button Styling */
+.navbar-button {
+    padding: 10px 18px;
+    background: #63b3ed; /* Bleu clair */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Angles arrondis */
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.navbar-button:hover {
+    background: #4299e1; /* Bleu plus foncé */
+    color: #e2e8f0; /* Gris clair */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus profonde */
+}
+
+/* Link Styling */
+.navbar-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e2e8f0; /* Gris clair */
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+    background: rgba(255, 255, 255, 0.1); /* Effet de survol subtil */
+    color: #90cdf4; /* Bleu clair */
+}
+
+/* Register Button Styling */
+.navbar-register {
+    background: #e2e8f0; /* Gris clair */
+    color: #2d3748; /* Gris anthracite */
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar-register:hover {
+    background: #cbd5e0; /* Gris doux */
+    color: #1a202c; /* Gris très foncé */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-button,
+    .navbar-register,
+    .navbar-link {
+        width: 100%; /* Prend toute la largeur */
+        text-align: center;
+    }
+}

@@ -1,0 +1,216 @@
+/* Global Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Friend List Container */
+.friend-list-container {
+    background: #edf2f7; /* Gris clair */
+    border-radius: 20px; /* Angles plus arrondis */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Ombre accentuée */
+    padding: 25px;
+    max-width: 650px;
+    margin: 25px auto;
+}
+
+.friend-list-container h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2d3748; /* Gris anthracite */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.friend-list-container p {
+    font-size: 16px;
+    color: #4a5568; /* Gris moyen */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Friend List */
+.friend-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.friend-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #ffffff; /* Blanc */
+    border-radius: 12px; /* Angles arrondis */
+    margin-bottom: 12px;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.friend-list li:hover {
+    background: #e2e8f0; /* Gris doux */
+}
+
+.friend-list li button {
+    background: #3182ce; /* Bleu vif */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 10px; /* Angles arrondis */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.friend-list li button:hover {
+    background: #2b6cb0; /* Bleu plus sombre */
+}
+
+/* Add Friend Section */
+.add-friend-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.add-friend-section input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5e0; /* Gris clair */
+    border-radius: 10px; /* Angles arrondis */
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.add-friend-section input:focus {
+    outline: none;
+    border-color: #3182ce; /* Bleu vif */
+    box-shadow: 0 4px 8px rgba(49, 130, 206, 0.2);
+}
+
+.add-friend-section button {
+    background: linear-gradient(135deg, #4299e1, #3182ce); /* Dégradé bleu vif */
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 15px;
+    border-radius: 10px; /* Angles arrondis */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin: 8px;
+}
+
+.add-friend-section button:hover {
+    background: linear-gradient(135deg, #3182ce, #2b6cb0); /* Dégradé inversé */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Pending Friend Requests */
+.pending-requests {
+    margin-top: 35px;
+}
+
+.pending-requests h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d3748; /* Gris anthracite */
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.pending-requests ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pending-requests li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #ffffff; /* Blanc */
+    border-radius: 12px;
+    margin-bottom: 12px;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pending-requests li:hover {
+    background: #e2e8f0; /* Gris doux */
+}
+
+.pending-requests li button {
+    background: #4299e1; /* Bleu vif */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 6px;
+}
+
+.pending-requests li button:hover {
+    background: #3182ce; /* Bleu plus sombre */
+}
+
+/* Notification Section */
+.notification {
+    background: #bee3f8; /* Bleu pastel */
+    border: 1px solid #90cdf4; /* Bleu clair */
+    padding: 14px;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #2d3748;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification button {
+    background: #e53e3e; /* Rouge vif */
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    font-size: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.notification button:hover {
+    background: #c53030; /* Rouge plus sombre */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .friend-list-container {
+        padding: 18px;
+    }
+
+    .friend-list li, .pending-requests li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .friend-list li button, .pending-requests li button {
+        margin-top: 6px;
+    }
+
+    .notification {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .notification button {
+        margin-top: 10px;
+    }
+}

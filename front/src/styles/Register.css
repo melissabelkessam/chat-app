@@ -1,0 +1,123 @@
+/* Global Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a202c, #2d3748); /* Gris foncé dégradé */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Register Container */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Register Card */
+.register-card {
+    background: #edf2f7; /* Gris clair */
+    padding: 40px 30px;
+    border-radius: 20px; /* Angles arrondis */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Register Title */
+.register-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #63b3ed; /* Bleu clair */
+    margin-bottom: 15px;
+}
+
+/* Register Subtitle */
+.register-subtitle {
+    font-size: 16px;
+    color: #718096; /* Gris doux */
+    margin-bottom: 25px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Input Fields */
+.register-input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #cbd5e0; /* Gris doux */
+    border-radius: 10px; /* Angles arrondis */
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #f7fafc; /* Blanc cassé */
+}
+
+.register-input:focus {
+    outline: none;
+    border: 1px solid #4299e1; /* Bleu vif */
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.2);
+}
+
+/* Submit Button */
+.register-button {
+    width: 100%;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #3182ce, #4299e1); /* Dégradé bleu */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px; /* Angles arrondis */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-button:hover {
+    background: linear-gradient(135deg, #4299e1, #3182ce); /* Dégradé inversé */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Ombre accentuée */
+}
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    color: #2d3748; /* Gris foncé */
+    font-weight: bold;
+}
+
+/* Login Link */
+.login-link {
+    color: #4299e1; /* Bleu vif */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+    color: #3182ce; /* Bleu plus sombre */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-card {
+        padding: 30px 20px;
+    }
+
+    .register-title {
+        font-size: 22px;
+    }
+
+    .register-button {
+        font-size: 14px;
+    }
+}
